@@ -1,0 +1,130 @@
+/* src/components/FashionModelPage.css */
+
+.fashionmodel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.modelimage {
+  width: 102%;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  transition: padding 0.3s; /* Add a transition for smooth hover effect */
+}
+
+
+
+body{
+background-color: #383738;
+}
+.fashionmodel h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.fashionmodel p {
+  font-size: 1rem;
+  color: #fffefe;
+}
+.card {
+  width: 250px;
+  margin: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  border: 1px solid #10565f;
+  border-radius: 5px;
+  background-color: rgb(224, 235, 221);
+ 
+}
+
+.electronicscontainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0px 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 16px 0 rgba(2, 2, 2, 0.2);
+  border: 1px solid #810303;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.cardbody {
+  padding: 10px;
+}
+
+.cardtext {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff9f9;
+}
+
+
+.loadMoreButton {
+  background-color: #c9c9c9;
+  color: #e9e5e5;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Add a smooth transition for hover effect */
+}
+.textmuted{
+  
+    font-weight:bolder;
+    color: rgb(34, 24, 24);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cardtext{
+  color: rgb(53, 52, 39);
+  display: flex;
+  justify-content: center;
+  font-weight:bolder;
+
+}
+.loadMoreButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  font-weight: bolder;
+}
+
+.loadMoreButton:hover {
+  background-color: #184474; /* Change background color on hover */
+}
+/* Media queries for responsiveness */
+@media (max-width: 350px) {
+  .card {
+    width: 100%;
+  }
+  .cardtext {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #380c0c;
+    padding: 50px;
+  }
+  
+  .textmuted {
+    color: #961515;
+  }
+  
+}
+
+/* You can add more styling as needed for your fashion model page. */
+

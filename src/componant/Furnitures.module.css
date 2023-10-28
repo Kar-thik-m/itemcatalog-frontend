@@ -1,0 +1,118 @@
+/* src/components/FashionModelPage.css */
+
+.fashionmodel {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    
+   
+  }
+ 
+  .textmuted{
+  
+    font-weight:bolder;
+    color: rgb(34, 24, 24);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.cardtext{
+  color: rgb(53, 52, 39);
+  display: flex;
+  justify-content: center;
+  font-weight:bolder;
+
+}
+  .modelimage {
+    width: 101%;
+    height: 40vh; 
+    object-fit: cover;
+    object-position: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+  }
+  .fcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 0px 40px;
+  }
+  .fashionmodel h1 {
+    font-size: 2rem;
+    color: #fff9f9;
+  }
+  
+  .fashionmodel p {
+    font-size: 1rem;
+    color: #383737;
+  }
+  .card {
+    width: 250px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff9f9;
+
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 16px 0 rgba(2, 2, 2, 0.2);
+    border: 1px solid #810303;
+  }
+  
+  
+  
+  .cardbody {
+    padding: 10px;
+  }
+  
+  .cardtext {
+    font-size: 1.2rem;
+  }
+  
+  .textmuted {
+    color: #272626;
+  }
+  .loadMoreButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .loadMoreButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #0056b3;
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+
+  
+  

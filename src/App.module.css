@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4a5052;
+  padding: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  &:hover {
+    color: rgb(54, 78, 100);
+    background-image: url("./assets/additem.jpg");
+    text-decoration:overline;
+
+  }
+
+  @media (max-width: 768px) {
+    /* Apply styles for screens with a maximum width of 768px */
+    padding: 8px; /* Reduce padding to make links more compact */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  @media (max-width: 480px) {
+    /* Apply styles for screens with a maximum width of 480px */
+    padding: 4px; /* Further reduce padding */
+    font-size: 12px; /* Further adjust font size */
+  }
+}
